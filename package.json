@@ -1,0 +1,28 @@
+{
+  "name": "mern-google-auth-app",
+  "version": "1.0.0",
+  "description": "Full-stack Authentication System with React, Tailwind CSS, Node.js, Express, MongoDB, and Google OAuth 2.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "concurrently \"npm start --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  },
+  "keywords": [
+    "mern",
+    "authentication",
+    "jwt",
+    "google-auth",
+    "react",
+    "tailwind",
+    "mongodb",
+    "express"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
